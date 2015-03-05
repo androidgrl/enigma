@@ -1,6 +1,9 @@
-require 'minitest'
-require 'minitest/autorun'
-require 'minitest/pride'
+# require 'simplecov'
+# SimpleCov.start
+# require 'minitest'
+# require 'minitest/autorun'
+# require 'minitest/pride'
+require_relative 'test_helper'
 require_relative '../lib/rotation'
 require "pry"
 
@@ -69,4 +72,28 @@ class TestFakeRotation < Minitest::Test
     assert 5, fr.key.length
   end
 
+  def test_it_can_generate_an_array_of_four_rotations
+    fr = FakeRotation.new
+    assert_equal 4, fr.rotation_array.length
+  end
+
+  def test_it_can_generate_the_first_rotation_from_the_key
+    fr = FakeRotation.new
+    assert_equal 12, fr.rotation_array[0]
+  end
+
+  def test_it_can_generate_the_second_rotation_from_the_key
+    fr = FakeRotation.new
+    assert_equal 23, fr.rotation_array[1]
+  end
+
+  def test_it_can_generate_the_third_rotation_from_the_key
+    fr = FakeRotation.new
+    assert_equal 34, fr.rotation_array[2]
+  end
+
+  def test_it_can_generate_the_fourth_rotation_from_the_key
+    fr = FakeRotation.new
+    assert_equal 45, fr.rotation_array[3]
+  end
 end

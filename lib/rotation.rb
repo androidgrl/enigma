@@ -51,7 +51,3 @@ class FakeRotation
     self.rotation_array = self.rotation_array.map(&:to_i)
   end
 end
-
-
-fake = FakeRotation.new
-fake.create_rotation_array

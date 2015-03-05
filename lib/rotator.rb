@@ -1,45 +1,36 @@
-class Rotator
-  attr_accessor :letter, :offset, :rotation
+require_relative 'rotation'
+require_relative 'offset'
 
-  def initialize(letter, offset, rotation)
-    self.letter = letter
+class Rotator
+  attr_accessor :string, :offset, :rotation
+
+  MAP = [*"a".."z"] + [*"0".."9"] + [" ", ".", ","]
+
+  def initialize(string, offset, rotation)
+    self.string = string
     self.offset = offset
     self.rotation = rotation
   end
 
-  def partial_map
-    letters = ("a".."z").to_a
-    numbers = ("0".."9").to_a
-    misc = [" ", ".", ","]
-    letters + numbers + misc
+  def find_letter_indices
+    letters = self.string.chars
+    indices = letters.map do |l|
+      MAP.index(l)
+    end
   end
 
-  def full_map
-    partial_map * 3
+  def total_shift_array
+    self.offset.zip(self.rotation).map do |n, o|
+      n + o
+    end
   end
 
-  def letter_index
-    full_map.index(self.letter)
-  end
+  def encrypt_strin
 
-  def shift
-    self.offset + self.rotation
   end
-
-  def encrypted_letter_index
-    letter_index + shift
-  end
-
-  def encrypt_letter
-    full_map[encrypted_letter_index]
-  end
-
 
 end
 
-rot = Rotator.new("c", 2, 3)
-rot.rotation
-rot.offset
-rot.letter
-rot.shift
-rot.encrypt_letter
+rot = Rotator.new("cat", Offset.new.create_offset, Rotation.new.rotation_array)
+#rot = Rotator.new("cat", 3, 4)
+rot.total_shift_array

@@ -14,3 +14,5 @@ class Offset
     digits[-4..-1].map{|d| d.to_i }
   end
 end
+
+off = Offset.new.create_offset

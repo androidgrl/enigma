@@ -1,21 +1,13 @@
-
-
-
-Enigma.encrypt(
-  Date.new.strftime(""),
-  File.read("message.txt")
-)
-assert_equal "skjlsdlk", Enigma.encrypt("010188", "abc")
-assert_equal "skjlsdlk", Enigma.encrypt("010198", "abc")
-assert_equal "skjlsdlk", Enigma.encrypt("010188", "aCc")
-assert_equal "skjlsdlk", Enigma.encrypt("010188", "abcasdf")
-assert_equal "skjlsdlk", Enigma.encrypt("010188", "")
-
-
-require 'text'
-
-class FileReader
-  def initialize(filename)
-    File.read(filename)
-  end
-end
+# require_relative 'test_helper'
+# require_relative '../lib/encryptor'
+#
+# class TestEncryptor < Minitest::Test
+#   def test_it_exists
+#     assert Encryptor
+#   end
+#
+#   def test_it_can_encrypt_a_letter
+#     en = Encryptor.new
+#     assert_equal (""), en.encrypt("c")
+#   end
+# end
