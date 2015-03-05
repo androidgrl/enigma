@@ -57,3 +57,16 @@ class TestRotation < Minitest::Test
     end
   end
 end
+
+class TestFakeRotation < Minitest::Test
+
+  def test_it_exists
+    assert FakeRotation
+  end
+
+  def test_it_has_a_key_that_is_five_elements_long
+    fr = FakeRotation.new
+    assert 5, fr.key.length
+  end
+
+end
