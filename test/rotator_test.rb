@@ -57,5 +57,11 @@ class TestRotator < Minitest::Test
 
   def test_it_can_chop_the_elongated_total_shift_array_to_be_the_same_length_as_the_find_letter_indices_array
 
+    rot = Rotator.new
+    assert_equal rot.find_letter_indices.length, rot.chopped_elongated_total_shift_array.length
+  end
+
+  def test_it_can_add_
+
   end
 end
