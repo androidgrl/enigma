@@ -13,3 +13,15 @@ total_map =
 #say index is 37 and the shift is 5, than add the two 42 % 39
 #say index is 5 and shift is 5, then 10 % 39
 #say index is 0 and shift is 1, then 1 % 39
+
+num1 = [*1..21]      # => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+num2 = [1, 2, 3, 4]  # => [1, 2, 3, 4]
+
+factor = (num1.length/num2.length) + 1  # => 6
+elongated = num2 * 6                    # => [1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4]
+
+difference = elongated.length - num1.length  # => 3
+
+elongated.pop(difference)  # => [2, 3, 4]
+elongated                  # => [1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1]
+1,19,14,12,8,2 
