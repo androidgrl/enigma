@@ -61,7 +61,8 @@ class TestRotator < Minitest::Test
     assert_equal rot.find_letter_indices.length, rot.chopped_elongated_total_shift_array.length
   end
 
-  def test_it_can_add_
-
+  def test_it_can_find_the_new_encrypted_index
+    rot = Rotator.new
+    assert_equal [3,22,17,15,11,5], rot.find_encrypted_index
   end
 end

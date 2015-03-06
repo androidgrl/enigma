@@ -14,7 +14,7 @@
       <img src="./assets/0.9.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-03-06T08:09:51-07:00">2015-03-06T08:09:51-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-03-06T08:52:34-07:00">2015-03-06T08:52:34-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.6
+         4.7
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>5</b> files in total.
-    <b>158</b> relevant lines. 
-    <span class="green"><b>158</b> lines covered</span> and
+    <b>165</b> relevant lines. 
+    <span class="green"><b>165</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -73,11 +73,11 @@
       <tr>
         <td class="strong"><a href="#af927ad41e60a8476097ace7b4b23b24925a05b2" class="src_link" title="lib/rotator.rb">lib/rotator.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>51</td>
-        <td>26</td>
-        <td>26</td>
+        <td>52</td>
+        <td>30</td>
+        <td>30</td>
         <td>0</td>
-        <td>5.4</td>
+        <td>6.2</td>
       </tr>
       
       <tr>
@@ -93,9 +93,9 @@
       <tr>
         <td class="strong"><a href="#7108203ac37505921014d53c4c82bf9dcf25e6e0" class="src_link" title="test/rotator_test.rb">test/rotator_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>63</td>
-        <td>39</td>
-        <td>39</td>
+        <td>68</td>
+        <td>42</td>
+        <td>42</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -583,8 +583,8 @@
     <h3>lib/rotator.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>26</b> relevant lines. 
-      <span class="green"><b>26</b> lines covered</span> and
+      <b>30</b> relevant lines. 
+      <span class="green"><b>30</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -595,13 +595,13 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative &#39;rotation&#39;  # =&gt; true</code>
+          <code class="ruby">require_relative &#39;rotation&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative &#39;offset&#39;    # =&gt; true</code>
+          <code class="ruby">require_relative &#39;offset&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
@@ -625,7 +625,7 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_accessor :string, :offset, :rotation  # =&gt; nil</code>
+          <code class="ruby">  attr_accessor :string, :offset, :rotation</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -637,7 +637,7 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">  MAP = [*&quot;a&quot;..&quot;z&quot;] + [*&quot;0&quot;..&quot;9&quot;] + [&quot; &quot;, &quot;.&quot;, &quot;,&quot;]  # =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;, &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot; &quot;, &quot;.&quot;, &quot;,&quot;]</code>
+          <code class="ruby">  MAP = [*&quot;a&quot;..&quot;z&quot;] + [*&quot;0&quot;..&quot;9&quot;] + [&quot; &quot;, &quot;.&quot;, &quot;,&quot;]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
@@ -652,20 +652,20 @@
           <code class="ruby">  def initialize(string=&quot;atomic&quot;, offset=[1,1,1,1], rotation=[2,2,2,2])</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="11">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="12" data-linenumber="11">
+          <span class="hits">12</span>
           
           <code class="ruby">    self.string = string.chars</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="12">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="12" data-linenumber="12">
+          <span class="hits">12</span>
           
           <code class="ruby">    self.offset = offset</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="13">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="12" data-linenumber="13">
+          <span class="hits">12</span>
           
           <code class="ruby">    self.rotation = rotation</code>
         </li>
@@ -673,7 +673,7 @@
         <li class="never" data-hits="" data-linenumber="14">
           
           
-          <code class="ruby">  end                                                                    # =&gt; nil</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
@@ -688,20 +688,20 @@
           <code class="ruby">  def find_letter_indices</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="17">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="17">
+          <span class="hits">6</span>
           
           <code class="ruby">    letters = self.string</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="18">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="18">
+          <span class="hits">6</span>
           
           <code class="ruby">    indices = letters.map do |l|</code>
         </li>
       
-        <li class="covered" data-hits="23" data-linenumber="19">
-          <span class="hits">23</span>
+        <li class="covered" data-hits="35" data-linenumber="19">
+          <span class="hits">35</span>
           
           <code class="ruby">      MAP.index(l)</code>
         </li>
@@ -715,7 +715,7 @@
         <li class="never" data-hits="" data-linenumber="21">
           
           
-          <code class="ruby">  end                             # =&gt; nil</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
@@ -730,14 +730,14 @@
           <code class="ruby">  def total_shift_array</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="24">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="12" data-linenumber="24">
+          <span class="hits">12</span>
           
           <code class="ruby">    self.offset.zip(self.rotation).map do |n, o|</code>
         </li>
       
-        <li class="covered" data-hits="40" data-linenumber="25">
-          <span class="hits">40</span>
+        <li class="covered" data-hits="48" data-linenumber="25">
+          <span class="hits">48</span>
           
           <code class="ruby">      n + o</code>
         </li>
@@ -751,7 +751,7 @@
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">  end                                             # =&gt; nil</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
@@ -766,8 +766,8 @@
           <code class="ruby">  def factor_to_elongate_the_shift_array</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="30">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="30">
+          <span class="hits">6</span>
           
           <code class="ruby">    self.string.length/self.total_shift_array.length + 1</code>
         </li>
@@ -775,7 +775,7 @@
         <li class="never" data-hits="" data-linenumber="31">
           
           
-          <code class="ruby">  end                                                     # =&gt; nil</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
@@ -790,8 +790,8 @@
           <code class="ruby">  def elongated_total_shift_array</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="34">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="34">
+          <span class="hits">5</span>
           
           <code class="ruby">    self.total_shift_array * factor_to_elongate_the_shift_array</code>
         </li>
@@ -799,7 +799,7 @@
         <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby">  end                                                            # =&gt; nil</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
@@ -814,8 +814,8 @@
           <code class="ruby">  def chopped_elongated_total_shift_array</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="38">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="38">
+          <span class="hits">3</span>
           
           <code class="ruby">    elongated_total_shift_array.take(find_letter_indices.length)</code>
         </li>
@@ -823,79 +823,85 @@
         <li class="never" data-hits="" data-linenumber="39">
           
           
-          <code class="ruby">  end                                         # ~&gt; NoMethodError: undefined method `chopped_elongated_total_shift_array&#39; for nil:NilClass</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
           
           
-          <code class="ruby">end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="41">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="42">
+        <li class="covered" data-hits="1" data-linenumber="41">
           <span class="hits">1</span>
           
-          <code class="ruby">rot = Rotator.new(&quot;catat&quot;, Offset.new.create_offset, Rotation.new.rotation_array)</code>
+          <code class="ruby">  def find_encrypted_index</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby">#rot = Rotator.new(&quot;catat&quot;, 3, 4)                                                   # =&gt; #&lt;Rotator:0x007f8b0408c528 @string=[&quot;c&quot;, &quot;a&quot;, &quot;t&quot;, &quot;a&quot;, &quot;t&quot;], @offset=3, @rotation=4&gt;</code>
+          <code class="ruby">    find_letter_indices.zip(chopped_elongated_total_shift_array).map do |n,o|</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="43">
+          <span class="hits">6</span>
+          
+          <code class="ruby">      n + o</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="44">
           <span class="hits">1</span>
           
-          <code class="ruby">rot.elongated_total_shift_array</code>
+          <code class="ruby">    end.map do |n|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="45">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="6" data-linenumber="45">
+          <span class="hits">6</span>
           
-          <code class="ruby">rot.chopped_elongated_total_shift_array</code>
+          <code class="ruby">      n % 39</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby"># ~&gt; NoMethodError</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
           
           
-          <code class="ruby"># ~&gt; undefined method `chopped_elongated_total_shift_array&#39; for nil:NilClass</code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby"># ~&gt;</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="50">
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"># ~&gt; /Users/jamie/turing/module1/weekthree/enigma2/lib/rotator.rb:40:in `&lt;class:Rotator&gt;&#39;</code>
+          <code class="ruby">rot = Rotator.new(&quot;catat&quot;, Offset.new.create_offset, Rotation.new.rotation_array)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="51">
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
           
+          <code class="ruby">rot.elongated_total_shift_array</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
           
-          <code class="ruby"># ~&gt; /Users/jamie/turing/module1/weekthree/enigma2/lib/rotator.rb:4:in `&lt;main&gt;&#39;</code>
+          <code class="ruby">rot.chopped_elongated_total_shift_array</code>
         </li>
       
     </ol>
@@ -1519,8 +1525,8 @@
     <h3>test/rotator_test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>39</b> relevant lines. 
-      <span class="green"><b>39</b> lines covered</span> and
+      <b>42</b> relevant lines. 
+      <span class="green"><b>42</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1901,6 +1907,36 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_can_find_the_new_encrypted_index</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rot = Rotator.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal [3,22,17,15,11,5], rot.find_encrypted_index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
           
           
           <code class="ruby">end</code>
