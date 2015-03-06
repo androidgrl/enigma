@@ -45,6 +45,12 @@ class Rotator
       n % 39
     end
   end
+
+  def encrypt
+    find_encrypted_index.map do |i|
+      MAP[i]
+    end.join
+  end
 end
 
 rot = Rotator.new("catat", Offset.new.create_offset, Rotation.new.rotation_array)

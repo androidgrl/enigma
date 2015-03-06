@@ -65,4 +65,9 @@ class TestRotator < Minitest::Test
     rot = Rotator.new
     assert_equal [3,22,17,15,11,5], rot.find_encrypted_index
   end
+
+  def test_it_can_find_the_new_encrypted_te_for_non_default_parameters
+    rot = Rotator.new("ruby", [9,2,2,5], [41,15,52,21])
+    assert_equal "2.ql", rot.encrypt
+  end
 end
