@@ -1,12 +1,12 @@
 class Offset
-  attr_reader :date
+  attr_accessor :date
 
-  def initialize(date=Time.now.strftime("%m%m%y"))
-    @date = date
+  def initialize(date=Time.now.strftime("%m%d%y"))
+    self.date = date
   end
 
   def integer_date
-    date.to_i
+    self.date.to_i
   end
 
   def create_offset
@@ -14,5 +14,3 @@ class Offset
     digits[-4..-1].map{|d| d.to_i }
   end
 end
-
-off = Offset.new.create_offset
