@@ -17,24 +17,13 @@ fp = FileParser.new
 path = File.join(__dir__, ARGV[0])
 fp.load(path)
 
-class Encryptor
-  attr_accessor :rotator
 
-  def initialize(rotator)
-    @rotator = rotator
-  end
-
-  def encrypt
-    "#{@rotator.encrypt}"
-  end
-end
-#rename rotator to encryptor
 rotation = Rotation.new
 offset = Offset.new
-rotator = Rotator.new(fp.message, offset.create_offset, rotation.rotation_array)
-encr = Encryptor.new(rotator)
-encrypted_message = encr.encrypt
+encryptor = Encryptor.new(fp.message, offset.create_offset, rotation.rotation_array)
+encrypted_message = encryptor.encrypt
 puts encrypted_message
+
 
 class FileWriter
   def save(filename, encrypted_message)

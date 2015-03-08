@@ -2,7 +2,7 @@ require_relative 'rotation'
 require_relative 'offset'
 require "pry"
 
-class Rotator
+class Encryptor
   attr_accessor :string, :offset, :rotation, :char_map
 
 
