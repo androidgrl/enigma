@@ -28,6 +28,7 @@ class Encryptor
     "#{@rotator.encrypt}"
   end
 end
+#rename rotator to encryptor
 
 rotator = Rotator.new(fp.message, Offset.new.create_offset, Rotation.new.rotation_array)
 encr = Encryptor.new(rotator)
@@ -45,3 +46,4 @@ end
 fw = FileWriter.new
 saved_file = File.join(__dir__, ARGV[1])
 fw.save(saved_file, encrypted_message)
+puts "Created #{ARGV[1]} with key #{} and date #{}"
