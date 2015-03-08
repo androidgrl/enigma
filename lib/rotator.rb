@@ -54,6 +54,3 @@ class Rotator
     end.join
   end
 end
-
-# rot = Rotator.new("ruby", Offset.new.create_offset, Rotation.new.rotation_array)  # => #<Rotator:0x007fe95206d1a8 @string=["r", "u", "b", "y"], @offset=[9, 2, 2, 5], @rotation=[93, 36, 69, 97]>
-# puts rot.encrypt                                                                  # => nil

@@ -14,7 +14,7 @@ class FileParser
 end
 
 fp = FileParser.new
-path = File.join(__dir__, ARGV.shift)
+path = File.join(__dir__, ARGV[0])
 fp.load(path)
 
 class Encryptor
@@ -31,4 +31,17 @@ end
 
 rotator = Rotator.new(fp.message, Offset.new.create_offset, Rotation.new.rotation_array)
 encr = Encryptor.new(rotator)
-puts encr.encrypt
+encrypted_message = encr.encrypt
+puts encrypted_message
+
+class FileWriter
+  def save(filename, encrypted_message)
+    File.open(filename, "w") do |file|
+      file.puts "#{encrypted_message}"
+    end
+  end
+end
+
+fw = FileWriter.new
+saved_file = File.join(__dir__, ARGV[1])
+fw.save(saved_file, encrypted_message)
