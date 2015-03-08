@@ -3,20 +3,21 @@ require_relative 'offset'
 require "pry"
 
 class Rotator
-  attr_accessor :string, :offset, :rotation
+  attr_accessor :string, :offset, :rotation, :char_map
 
-  MAP = [*"a".."z"] + [*"0".."9"] + [" ", ".", ","]
 
   def initialize(string="atomic", offset=[1,1,1,1], rotation=[2,2,2,2])
     self.string = string.chars
     self.offset = offset
     self.rotation = rotation
+    self.char_map = [*"a".."z"] + [*"0".."9"] + [" ", ".", ","]
+
   end
 
   def find_letter_indices
     letters = self.string
     indices = letters.map do |l|
-      MAP.index(l)
+    char_map.index(l)
     end
   end
 
@@ -39,20 +40,20 @@ class Rotator
   end
 
   def find_encrypted_index
-    find_letter_indices.zip(chopped_elongated_total_shift_array).map do |n,o|
-      n + o
-    end.map do |n|
-      n % 39
+    totals = find_letter_indices.zip(chopped_elongated_total_shift_array).map do |index, shift|
+      index + shift
+    end
+    totals.map do |total|
+      total % 39
     end
   end
 
   def encrypt
-    find_encrypted_index.map do |i|
-      MAP[i]
+    find_encrypted_index.map do |index|
+      self.char_map[index]
     end.join
   end
 end
 
-rot = Rotator.new("catat", Offset.new.create_offset, Rotation.new.rotation_array)
-rot.elongated_total_shift_array
-rot.chopped_elongated_total_shift_array
+# rot = Rotator.new("ruby", Offset.new.create_offset, Rotation.new.rotation_array)  # => #<Rotator:0x007fe95206d1a8 @string=["r", "u", "b", "y"], @offset=[9, 2, 2, 5], @rotation=[93, 36, 69, 97]>
+# puts rot.encrypt                                                                  # => nil
