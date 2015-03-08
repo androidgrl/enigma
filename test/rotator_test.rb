@@ -1,74 +1,74 @@
 require_relative 'test_helper'
-require_relative '../lib/rotator'
+require_relative '../lib/encryptor'
 
-class TestRotator < Minitest::Test
+class TestEncryptor < Minitest::Test
   def test_it_exists
-    assert Rotator
+    assert Encryptor
   end
 
   def test_it_takes_in_a_string_and_splits_it
-    rot = Rotator.new
-    assert_equal ["a", "t", "o", "m", "i", "c"], rot.string
+    enc = Encryptor.new
+    assert_equal ["a", "t", "o", "m", "i", "c"], enc.string
   end
 
   def test_it_has_an_offset_attribute_that_is_a_four_element_array
-    rot = Rotator.new
-    assert_equal [1, 1, 1, 1], rot.offset
-    assert_equal 4, rot.offset.length
+    enc = Encryptor.new
+    assert_equal [1, 1, 1, 1], enc.offset
+    assert_equal 4, enc.offset.length
   end
 
   def test_it_has_a_rotation_attribute_that_is_a_four_element_array
-    rot = Rotator.new
-    assert_equal [2,2,2,2], rot.rotation
-    assert_equal 4, rot.rotation.length
+    enc = Encryptor.new
+    assert_equal [2,2,2,2], enc.rotation
+    assert_equal 4, enc.rotation.length
   end
 
   def test_it_can_have_a_new_offset
-    rot = Rotator.new("blondie", [9,2,2,5])
-    assert_equal [9,2,2,5], rot.offset
-    assert_equal 4, rot.offset.length
+    enc = Encryptor.new("blondie", [9,2,2,5])
+    assert_equal [9,2,2,5], enc.offset
+    assert_equal 4, enc.offset.length
   end
 
   def test_it_can_have_a_new_rotation
-    rot = Rotator.new("blondie", [9,2,2,5], [8,0,0,8])
-    assert_equal [8,0,0,8], rot.rotation
-    assert_equal 4, rot.rotation.length
+    enc = Encryptor.new("blondie", [9,2,2,5], [8,0,0,8])
+    assert_equal [8,0,0,8], enc.rotation
+    assert_equal 4, enc.rotation.length
   end
 
   def test_it_can_find_letter_indices
-    rot = Rotator.new
-    assert_equal [0,19,14,12,8,2], rot.find_letter_indices
+    enc = Encryptor.new
+    assert_equal [0,19,14,12,8,2], enc.find_letter_indices
   end
 
   def test_it_can_add_offset_and_rotation_to_get_total_shift_array
-    rot = Rotator.new
-    assert_equal [3,3,3,3], rot.total_shift_array
+    enc = Encryptor.new
+    assert_equal [3,3,3,3], enc.total_shift_array
   end
 
-  def test_it_can_calculate_the_factor_to_elongate_the_total_shift_array
-    rot = Rotator.new
-    assert_equal 2, rot.factor_to_elongate_the_shift_array
+  def test_it_can_calculate_how_much_to_lengthen_the_total_shift_array
+    enc = Encryptor.new
+    assert_equal 2, enc.how_much_to_lengthen_the_total_shift_array
   end
 
-  def test_it_can_form_an_elongated_total_shift_array
-    rot = Rotator.new
-    assert_equal [3,3,3,3,3,3,3,3], rot.elongated_total_shift_array
+  def test_it_can_lengthen_the_total_shift_array
+    enc = Encryptor.new
+    assert_equal [3,3,3,3,3,3,3,3], enc.lengthen_the_total_shift_array
   end
 
-  def test_it_can_chop_the_elongated_total_shift_array_to_be_the_same_length_as_the_find_letter_indices_array
+  def test_it_can_make_the_shift_array_the_same_length_as_message
 
-    rot = Rotator.new
-    assert_equal rot.find_letter_indices.length, rot.chopped_elongated_total_shift_array.length
+    enc = Encryptor.new
+    assert_equal enc.find_letter_indices.length, enc.make_the_shift_array_the_same_length_as_message.length
   end
 
   def test_it_can_find_the_new_encrypted_index
-    rot = Rotator.new
-    assert_equal [3,22,17,15,11,5], rot.find_encrypted_index
+    enc = Encryptor.new
+    assert_equal [3,22,17,15,11,5], enc.find_encrypted_index
   end
 
   def test_it_can_find_the_new_encrypted_te_for_non_default_parameters
-    rot = Rotator.new("ruby", [9,2,2,5], [41,15,52,21])
-    assert_equal "2.ql", rot.encrypt
-    assert rot.encrypt.length == rot.find_encrypted_index.length
+    enc = Encryptor.new("ruby", [9,2,2,5], [41,15,52,21])
+    assert_equal "2.ql", enc.encrypt
+    assert enc.encrypt.length == enc.find_encrypted_index.length
   end
 end

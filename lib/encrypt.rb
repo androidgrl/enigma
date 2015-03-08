@@ -1,4 +1,4 @@
-require_relative 'rotator'
+require_relative 'encryptor'
 require_relative 'rotation'
 require_relative 'offset'
 require 'pry'
