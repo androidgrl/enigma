@@ -27,20 +27,20 @@ class Rotator
     end
   end
 
-  def factor_to_elongate_the_shift_array
+  def how_much_to_lengthen_the_total_shift_array
     self.string.length/self.total_shift_array.length + 1
   end
 
-  def elongated_total_shift_array
-    self.total_shift_array * factor_to_elongate_the_shift_array
+  def lengthen_the_total_shift_array
+    self.total_shift_array * how_much_to_lengthen_the_total_shift_array
   end
 
-  def chopped_elongated_total_shift_array
-    elongated_total_shift_array.take(find_letter_indices.length)
+  def make_the_shift_array_the_same_length_as_message
+    lengthen_the_total_shift_array.take(find_letter_indices.length)
   end
 
   def find_encrypted_index
-    totals = find_letter_indices.zip(chopped_elongated_total_shift_array).map do |index, shift|
+    totals = find_letter_indices.zip(make_the_shift_array_the_same_length_as_message).map do |index, shift|
       index + shift
     end
     totals.map do |total|

@@ -2,8 +2,7 @@
 # Created 'encrypted.txt' with the key 82648 and date 030415
 #ruby ./lib/encrypt.rb message.txt encrypted.txt
 
-
-#add file writing
+#refactor rotator, rename it to encryptor
 #add decryptor
 #private methods
 
