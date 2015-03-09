@@ -14,27 +14,27 @@
       <img src="./assets/0.9.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-03-08T19:58:08-06:00">2015-03-08T19:58:08-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-03-09T14:02:25-06:00">2015-03-09T14:02:25-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">99.39%</span></span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         5.51
+         15.83
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>9</b> files in total.
-    <b>164</b> relevant lines. 
-    <span class="green"><b>163</b> lines covered</span> and
-    <span class="red"><b>1</b> lines missed </span>
+    <b>218</b> relevant lines. 
+    <span class="green"><b>218</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -53,11 +53,11 @@
       <tr>
         <td class="strong"><a href="#b710b36e045100b14bf911af29c413b4a64783a9" class="src_link" title="lib/decryptor.rb">lib/decryptor.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>18</td>
-        <td>11</td>
-        <td>11</td>
+        <td>29</td>
+        <td>19</td>
+        <td>19</td>
         <td>0</td>
-        <td>2.3</td>
+        <td>3.9</td>
       </tr>
       
       <tr>
@@ -67,7 +67,17 @@
         <td>11</td>
         <td>11</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>3.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#e0ae937a58109154fbe4f973c4d0a4e0e9768e99" class="src_link" title="lib/master_cipher.rb">lib/master_cipher.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>56</td>
+        <td>31</td>
+        <td>31</td>
+        <td>0</td>
+        <td>72.4</td>
       </tr>
       
       <tr>
@@ -77,35 +87,25 @@
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>7.3</td>
+        <td>12.7</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#5c625e3ec70b6d39e341bdcde64d418ef42aa417" class="src_link" title="lib/rotation.rb">lib/rotation.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>57</td>
+        <td>30</td>
         <td>17</td>
         <td>17</td>
         <td>0</td>
-        <td>25.3</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#2063c18617a96080d8d4c3f3ad2739240f699bc5" class="src_link" title="lib/thingy.rb">lib/thingy.rb</a></td>
-        <td class="green strong">96.97 %</td>
-        <td>71</td>
-        <td>33</td>
-        <td>32</td>
-        <td>1</td>
-        <td>8.4</td>
+        <td>49.5</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#38637d0dbb83f95e4d99891eca4c15e385e21b4e" class="src_link" title="test/encryptor_test.rb">test/encryptor_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>74</td>
-        <td>6</td>
-        <td>6</td>
+        <td>77</td>
+        <td>30</td>
+        <td>30</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -123,7 +123,7 @@
       <tr>
         <td class="strong"><a href="#e62ff700866e96b09dff269c88bfc2481436f9c4" class="src_link" title="test/offset_test.rb">test/offset_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>72</td>
+        <td>68</td>
         <td>38</td>
         <td>38</td>
         <td>0</td>
@@ -133,11 +133,11 @@
       <tr>
         <td class="strong"><a href="#391d8250d3bdb28d2c234b35b0396bdd01a19f79" class="src_link" title="test/rotation_test.rb">test/rotation_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>68</td>
-        <td>39</td>
-        <td>39</td>
+        <td>94</td>
+        <td>63</td>
+        <td>63</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>1.2</td>
       </tr>
       
     </tbody>
@@ -161,8 +161,8 @@
     <h3>lib/decryptor.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>11</b> relevant lines. 
-      <span class="green"><b>11</b> lines covered</span> and
+      <b>19</b> relevant lines. 
+      <span class="green"><b>19</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -173,109 +173,175 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative &#39;thingy&#39;</code>
+          <code class="ruby">require_relative &#39;master_cipher&#39;  # =&gt; true</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">class Decryptor</code>
+          <code class="ruby">require_relative &#39;offset&#39;         # =&gt; true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require_relative &#39;rotation&#39;       # =&gt; true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Decryptor</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
           <code class="ruby">  def initialize(encrypted_message, date, key)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="5">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="9" data-linenumber="8">
+          <span class="hits">9</span>
           
-          <code class="ruby">    @encrypted_message = encrypted_message</code>
+          <code class="ruby">    @encrypted_message = encrypted_message                   # =&gt; &quot;7vm0w2mapvsx45m6p mfz3txv564l4m1m7m04os0pxt4&quot;, &quot;fevh4peoebuhabtycbs8t,sybbe3 7ms2rys9deydqer te3 7zoc71ztqoot,ykyhep0 04ab&quot;</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="6">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="9" data-linenumber="9">
+          <span class="hits">9</span>
           
-          <code class="ruby">    @date = date</code>
+          <code class="ruby">    @date = date                                             # =&gt; &quot;020315&quot;, &quot;020315&quot;</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="7">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="9" data-linenumber="10">
+          <span class="hits">9</span>
           
-          <code class="ruby">    @key = key</code>
+          <code class="ruby">    @key = key                                               # =&gt; &quot;10098&quot;, &quot;13444&quot;</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="8">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="9" data-linenumber="11">
+          <span class="hits">9</span>
           
-          <code class="ruby">    @char_map = [*&quot;a&quot;..&quot;z&quot;] + [*&quot;0&quot;..&quot;9&quot;] + [&quot; &quot;, &quot;.&quot;, &quot;,&quot;]</code>
+          <code class="ruby">    @char_map = [*&quot;a&quot;..&quot;z&quot;] + [*&quot;0&quot;..&quot;9&quot;] + [&quot; &quot;, &quot;.&quot;, &quot;,&quot;]  # =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;, &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot; &quot;, &quot;.&quot;, &quot;,&quot;], [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;, &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot; &quot;, &quot;.&quot;, &quot;,&quot;]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  end                                                        # =&gt; nil</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
+        <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
           <code class="ruby">  def decrypt</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="12">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="9" data-linenumber="15">
+          <span class="hits">9</span>
           
-          <code class="ruby">    offset = Offset.new(@date).create_offset</code>
+          <code class="ruby">    offset = Offset.new(@date).create_offset                        # =&gt; [9, 2, 2, 5], [9, 2, 2, 5]</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="13">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="9" data-linenumber="16">
+          <span class="hits">9</span>
           
-          <code class="ruby">    rotation = Rotation.new(@key).create_rotation_array</code>
+          <code class="ruby">    rotation = Rotation.new(@key).create_rotation_array             # =&gt; [10, 0, 9, 98], [13, 34, 44, 44]</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="14">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="9" data-linenumber="17">
+          <span class="hits">9</span>
           
-          <code class="ruby">    Thingy.new(@encrypted_message, offset, rotation).decrypt</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby"></code>
+          <code class="ruby">    MasterCipher.new(@encrypted_message, offset, rotation).decrypt  # =&gt; &quot;otbbd0bo9th.l3bh98btg1i.c3vf52bc65bblmhb9vif&quot;, &quot;who is even remotely close to figuring out how to set up the crack feature&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">  end                                                               # =&gt; nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">end  # =&gt; nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">decryptor = Decryptor.new(&quot;7vm0w2mapvsx45m6p mfz3txv564l4m1m7m04os0pxt4&quot;, &quot;020315&quot;, &quot;10098&quot;)  # =&gt; #&lt;Decryptor:0x007f9c13885c78 @encrypted_message=&quot;7vm0w2mapvsx45m6p mfz3txv564l4m1m7m04os0pxt4&quot;, @date=&quot;020315&quot;, @key=&quot;10098&quot;, @char_map=[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;, &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot; &quot;, &quot;.&quot;, &quot;,&quot;]&gt;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">decryptor.decrypt                                                                             # =&gt; &quot;otbbd0bo9th.l3bh98btg1i.c3vf52bc65bblmhb9vif&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">decryptor = Decryptor.new(&quot;fevh4peoebuhabtycbs8t,sybbe3 7ms2rys9deydqer te3 7zoc71ztqoot,ykyhep0 04ab&quot;, &quot;020315&quot;, &quot;13444&quot;)  # =&gt; #&lt;Decryptor:0x007f9c13897e00 @encrypted_message=&quot;fevh4peoebuhabtycbs8t,sybbe3 7ms2rys9deydqer te3 7zoc71ztqoot,ykyhep0 04ab&quot;, @date=&quot;020315&quot;, @key=&quot;13444&quot;, @char_map=[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;, &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot; &quot;, &quot;.&quot;, &quot;,&quot;]&gt;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">decryptor.decrypt</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">decrypor = Decryptor.new(&quot;&quot;, &quot;030915&quot;, &quot;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">decryptor.decrypt                                                                                                        # =&gt; &quot;who is even remotely close to figuring out how to set up the crack feature&quot;</code>
         </li>
       
     </ol>
@@ -350,20 +416,20 @@
           <code class="ruby">  def initialize(string=&quot;atomic&quot;, offset=[1,1,1,1], rotation=[2,2,2,2])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="8" data-linenumber="10">
+          <span class="hits">8</span>
           
           <code class="ruby">    self.string = string.chars</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="8" data-linenumber="11">
+          <span class="hits">8</span>
           
           <code class="ruby">    self.offset = offset</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="8" data-linenumber="12">
+          <span class="hits">8</span>
           
           <code class="ruby">    self.rotation = rotation</code>
         </li>
@@ -386,10 +452,10 @@
           <code class="ruby">  def encrypt</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="16">
+          <span class="hits">2</span>
           
-          <code class="ruby">    Thingy.new(string.join, offset, rotation).encrypt</code>
+          <code class="ruby">    MasterCipher.new(string.join, offset, rotation).encrypt</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
@@ -399,6 +465,360 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="e0ae937a58109154fbe4f973c4d0a4e0e9768e99">
+  <div class="header">
+    <h3>lib/master_cipher.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>31</b> relevant lines. 
+      <span class="green"><b>31</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class MasterCipher</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_accessor :offset, :rotation, :message, :char_map</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def initialize(message, offset, rotation)</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="5">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @message = message</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="6">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @offset = offset</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="7">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @rotation = rotation</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="8">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @char_map = [*&quot;a&quot;..&quot;z&quot;] + [*&quot;0&quot;..&quot;9&quot;] + [&quot; &quot;, &quot;.&quot;, &quot;,&quot;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def decrypt</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="12">
+          <span class="hits">9</span>
+          
+          <code class="ruby">    total_shift = build_shift</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="13">
+          <span class="hits">9</span>
+          
+          <code class="ruby">    message_indices = build_message_indices</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="15">
+          <span class="hits">9</span>
+          
+          <code class="ruby">    decrypted_indices = message_indices.zip(total_shift).map do |index, shift|</code>
+        </li>
+      
+        <li class="covered" data-hits="645" data-linenumber="16">
+          <span class="hits">645</span>
+          
+          <code class="ruby">      (index - shift) % 39</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="19">
+          <span class="hits">9</span>
+          
+          <code class="ruby">    build_string(decrypted_indices)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def encrypt</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="23">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    total_shift = build_shift</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="24">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    message_indices = build_message_indices</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="26">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    encrypted_indices = message_indices.zip(total_shift).map do |index, shift|</code>
+        </li>
+      
+        <li class="covered" data-hits="38" data-linenumber="27">
+          <span class="hits">38</span>
+          
+          <code class="ruby">      (index + shift) % 39</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="30">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    build_string(encrypted_indices)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def build_string(indices)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">    indices.map do |index|</code>
+        </li>
+      
+        <li class="covered" data-hits="683" data-linenumber="37">
+          <span class="hits">683</span>
+          
+          <code class="ruby">      char_map[index]</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="38">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    end.join</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def build_message_indices</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="42">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    message.chars.map do |letter|</code>
+        </li>
+      
+        <li class="covered" data-hits="683" data-linenumber="43">
+          <span class="hits">683</span>
+          
+          <code class="ruby">      char_map.index(letter)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def build_shift</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="48">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    short_array = offset.zip(rotation).map do |offset,rotation|</code>
+        </li>
+      
+        <li class="covered" data-hits="44" data-linenumber="49">
+          <span class="hits">44</span>
+          
+          <code class="ruby">      offset + rotation</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="52">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    long_array = short_array * (@message.length/short_array.length + 1)</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="53">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    long_array.take(@message.length)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby">end</code>
@@ -446,8 +866,8 @@
           <code class="ruby">  def initialize(date=Time.now.strftime(&quot;%m%d%y&quot;))</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="5">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="16" data-linenumber="5">
+          <span class="hits">16</span>
           
           <code class="ruby">    self.date = date</code>
         </li>
@@ -470,8 +890,8 @@
           <code class="ruby">  def integer_date</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="9">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="15" data-linenumber="9">
+          <span class="hits">15</span>
           
           <code class="ruby">    self.date.to_i</code>
         </li>
@@ -494,14 +914,14 @@
           <code class="ruby">  def create_offset</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="13">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="13" data-linenumber="13">
+          <span class="hits">13</span>
           
           <code class="ruby">    digits = (integer_date ** 2).to_s.chars</code>
         </li>
       
-        <li class="covered" data-hits="35" data-linenumber="14">
-          <span class="hits">35</span>
+        <li class="covered" data-hits="65" data-linenumber="14">
+          <span class="hits">65</span>
           
           <code class="ruby">    digits[-4..-1].map{|d| d.to_i }</code>
         </li>
@@ -572,14 +992,14 @@
           <code class="ruby">  def initialize(key=nil)</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="7">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="24" data-linenumber="7">
+          <span class="hits">24</span>
           
           <code class="ruby">    if key.nil?</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="8">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="11" data-linenumber="8">
+          <span class="hits">11</span>
           
           <code class="ruby">      create_key</code>
         </li>
@@ -590,8 +1010,8 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="10">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="13" data-linenumber="10">
+          <span class="hits">13</span>
           
           <code class="ruby">      self.key = key</code>
         </li>
@@ -602,8 +1022,8 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="12">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="24" data-linenumber="12">
+          <span class="hits">24</span>
           
           <code class="ruby">    create_rotation_array</code>
         </li>
@@ -626,8 +1046,8 @@
           <code class="ruby">  def create_key</code>
         </li>
       
-        <li class="covered" data-hits="48" data-linenumber="16">
-          <span class="hits">48</span>
+        <li class="covered" data-hits="66" data-linenumber="16">
+          <span class="hits">66</span>
           
           <code class="ruby">    self.key = 5.times.map { NUMBERS.sample }</code>
         </li>
@@ -650,8 +1070,8 @@
           <code class="ruby">  def create_rotation_array</code>
         </li>
       
-        <li class="covered" data-hits="20" data-linenumber="20">
-          <span class="hits">20</span>
+        <li class="covered" data-hits="41" data-linenumber="20">
+          <span class="hits">41</span>
           
           <code class="ruby">    self.rotation_array = []</code>
         </li>
@@ -662,26 +1082,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="20" data-linenumber="22">
-          <span class="hits">20</span>
+        <li class="covered" data-hits="41" data-linenumber="22">
+          <span class="hits">41</span>
           
           <code class="ruby">    i = 0</code>
         </li>
       
-        <li class="covered" data-hits="120" data-linenumber="23">
-          <span class="hits">120</span>
+        <li class="covered" data-hits="246" data-linenumber="23">
+          <span class="hits">246</span>
           
           <code class="ruby">    while i &lt; (key.length - 1)</code>
         </li>
       
-        <li class="covered" data-hits="80" data-linenumber="24">
-          <span class="hits">80</span>
+        <li class="covered" data-hits="164" data-linenumber="24">
+          <span class="hits">164</span>
           
           <code class="ruby">      self.rotation_array &lt;&lt; (key[i] + key[i+1])</code>
         </li>
       
-        <li class="covered" data-hits="80" data-linenumber="25">
-          <span class="hits">80</span>
+        <li class="covered" data-hits="164" data-linenumber="25">
+          <span class="hits">164</span>
           
           <code class="ruby">      i += 1</code>
         </li>
@@ -698,8 +1118,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="20" data-linenumber="28">
-          <span class="hits">20</span>
+        <li class="covered" data-hits="41" data-linenumber="28">
+          <span class="hits">41</span>
           
           <code class="ruby">    self.rotation_array = self.rotation_array.map(&amp;:to_i)</code>
         </li>
@@ -716,612 +1136,6 @@
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="32">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby"># class FakeRotation</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="34">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby">#   attr_accessor :key, :rotation_array</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="37">
-          
-          
-          <code class="ruby">#   def initialize</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="38">
-          
-          
-          <code class="ruby">#     create_key</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="39">
-          
-          
-          <code class="ruby">#     create_rotation_array</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="40">
-          
-          
-          <code class="ruby">#   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="41">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="42">
-          
-          
-          <code class="ruby">#   def create_key</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="43">
-          
-          
-          <code class="ruby">#     self.key = [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
-          <code class="ruby">#   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="45">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="46">
-          
-          
-          <code class="ruby">#   def create_rotation_array</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="47">
-          
-          
-          <code class="ruby">#     self.rotation_array = []</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="49">
-          
-          
-          <code class="ruby">#     i = 0</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
-          <code class="ruby">#     while i &lt; (key.length - 1)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="51">
-          
-          
-          <code class="ruby">#       self.rotation_array &lt;&lt; (key[i] + key[i+1])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="52">
-          
-          
-          <code class="ruby">#       i += 1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="53">
-          
-          
-          <code class="ruby">#     end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="55">
-          
-          
-          <code class="ruby">#     self.rotation_array = self.rotation_array.map(&amp;:to_i)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="56">
-          
-          
-          <code class="ruby">#   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="57">
-          
-          
-          <code class="ruby"># end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-      
-        <div class="source_table" id="2063c18617a96080d8d4c3f3ad2739240f699bc5">
-  <div class="header">
-    <h3>lib/thingy.rb</h3>
-    <h4><span class="green">96.97 %</span> covered</h4>
-    <div>
-      <b>33</b> relevant lines. 
-      <span class="green"><b>32</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class Thingy</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  attr_accessor :offset, :rotation, :message, :char_map</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def initialize(message, offset, rotation)</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="5">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    @message = message</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="6">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    @offset = offset</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="7">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    @rotation = rotation</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="8">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    @char_map = [*&quot;a&quot;..&quot;z&quot;] + [*&quot;0&quot;..&quot;9&quot;] + [&quot; &quot;, &quot;.&quot;, &quot;,&quot;]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def decrypt</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="12">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    total_shift = build_shift</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="13">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    message_indices = build_message_indices</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="15">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    decrypted_indices = message_indices.zip(total_shift).map do |index, shift|</code>
-        </li>
-      
-        <li class="covered" data-hits="61" data-linenumber="16">
-          <span class="hits">61</span>
-          
-          <code class="ruby">      (index - shift) % 39</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="19">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    build_string(decrypted_indices)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def encrypt</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="23">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    total_shift = build_shift</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    message_indices = build_message_indices</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    encrypted_indices = message_indices.zip(total_shift).map do |index, shift|</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="27">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      begin</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="28">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      (index + shift) % 39</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
-          <code class="ruby">    rescue</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="30">
-          
-          
-          <code class="ruby">      binding.pry</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="32">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    build_string(encrypted_indices)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="37">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  private</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="38">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="39">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def build_string(indices)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="40">
-          
-          
-          <code class="ruby">    indices.map do |index|</code>
-        </li>
-      
-        <li class="covered" data-hits="65" data-linenumber="41">
-          <span class="hits">65</span>
-          
-          <code class="ruby">      char_map[index]</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="42">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    end.join</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="43">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="45">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def build_message_indices</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="46">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    message.chars.map do |letter|</code>
-        </li>
-      
-        <li class="covered" data-hits="65" data-linenumber="47">
-          <span class="hits">65</span>
-          
-          <code class="ruby">      char_map.index(letter)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="49">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="51">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def build_shift</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="52">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    short_array = offset.zip(rotation).map do |offset,rotation|</code>
-        </li>
-      
-        <li class="covered" data-hits="16" data-linenumber="53">
-          <span class="hits">16</span>
-          
-          <code class="ruby">      offset + rotation</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="55">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="56">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    total_array = short_array * (@message.length/short_array.length + 1)</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="57">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    total_array.take(@message.length)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="58">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="59">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="60">
-          
-          
-          <code class="ruby">#   def how_much_to_lengthen_the_total_shift_array</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="61">
-          
-          
-          <code class="ruby"># -    self.string.length/self.total_shift_array.length + 1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="62">
-          
-          
-          <code class="ruby"># -  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="63">
-          
-          
-          <code class="ruby"># -  def lengthen_the_total_shift_array</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="64">
-          
-          
-          <code class="ruby"># -    self.total_shift_array * how_much_to_lengthen_the_total_shift_array</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="65">
-          
-          
-          <code class="ruby"># -  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="66">
-          
-          
-          <code class="ruby"># -</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="67">
-          
-          
-          <code class="ruby"># -  def make_the_shift_array_the_same_length_as_message</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="68">
-          
-          
-          <code class="ruby"># -    lengthen_the_total_shift_array.take(find_letter_indices.length)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="69">
-          
-          
-          <code class="ruby"># -  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="70">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="71">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
     </ol>
   </pre>
 </div>
@@ -1331,8 +1145,8 @@
     <h3>test/encryptor_test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>30</b> relevant lines. 
+      <span class="green"><b>30</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1364,421 +1178,439 @@
           <code class="ruby">class TestEncryptor &lt; Minitest::Test</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # def test_it_exists</code>
+          <code class="ruby">  def test_it_exists</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   assert Encryptor</code>
+          <code class="ruby">    assert Encryptor</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">  # end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # def test_it_takes_in_a_string_and_splits_it</code>
+          <code class="ruby">  def test_it_takes_in_a_string_and_splits_it</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   enc = Encryptor.new</code>
+          <code class="ruby">    enc = Encryptor.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   assert_equal [&quot;a&quot;, &quot;t&quot;, &quot;o&quot;, &quot;m&quot;, &quot;i&quot;, &quot;c&quot;], enc.string</code>
+          <code class="ruby">    assert_equal [&quot;a&quot;, &quot;t&quot;, &quot;o&quot;, &quot;m&quot;, &quot;i&quot;, &quot;c&quot;], enc.string</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">  # end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # def test_it_has_an_offset_attribute_that_is_a_four_element_array</code>
+          <code class="ruby">  def test_it_has_an_offset_attribute_that_is_a_four_element_array</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   enc = Encryptor.new</code>
+          <code class="ruby">    enc = Encryptor.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   assert_equal [1, 1, 1, 1], enc.offset</code>
+          <code class="ruby">    assert_equal [1, 1, 1, 1], enc.offset</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   assert_equal 4, enc.offset.length</code>
+          <code class="ruby">    assert_equal 4, enc.offset.length</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">  # end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # def test_it_has_a_rotation_attribute_that_is_a_four_element_array</code>
+          <code class="ruby">  def test_it_has_a_rotation_attribute_that_is_a_four_element_array</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   enc = Encryptor.new</code>
+          <code class="ruby">    enc = Encryptor.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   assert_equal [2,2,2,2], enc.rotation</code>
+          <code class="ruby">    assert_equal [2,2,2,2], enc.rotation</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   assert_equal 4, enc.rotation.length</code>
+          <code class="ruby">    assert_equal 4, enc.rotation.length</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby">  # end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # def test_it_can_have_a_new_offset</code>
+          <code class="ruby">  def test_it_can_have_a_new_offset</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   enc = Encryptor.new(&quot;blondie&quot;, [9,2,2,5])</code>
+          <code class="ruby">    enc = Encryptor.new(&quot;blondie&quot;, [9,2,2,5])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   assert_equal [9,2,2,5], enc.offset</code>
+          <code class="ruby">    assert_equal [9,2,2,5], enc.offset</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   assert_equal 4, enc.offset.length</code>
+          <code class="ruby">    assert_equal 4, enc.offset.length</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">  # end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # def test_it_can_have_a_new_rotation</code>
+          <code class="ruby">  def test_it_can_have_a_new_rotation</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   enc = Encryptor.new(&quot;blondie&quot;, [9,2,2,5], [8,0,0,8])</code>
+          <code class="ruby">    enc = Encryptor.new(&quot;blondie&quot;, [9,2,2,5], [8,0,0,8])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   assert_equal [8,0,0,8], enc.rotation</code>
+          <code class="ruby">    assert_equal [8,0,0,8], enc.rotation</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   assert_equal 4, enc.rotation.length</code>
+          <code class="ruby">    assert_equal 4, enc.rotation.length</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
           
           
-          <code class="ruby">  # end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
           
           
-          <code class="ruby">  #</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="38">
-          
-          
-          <code class="ruby">  # def test_it_can_find_letter_indices</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="39">
-          
-          
-          <code class="ruby">  #   enc = Encryptor.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="40">
-          
-          
-          <code class="ruby">  #   assert_equal [0,19,14,12,8,2], enc.find_letter_indices</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="41">
-          
-          
-          <code class="ruby">  # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="42">
-          
-          
-          <code class="ruby">  #</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="43">
-          
-          
-          <code class="ruby">  # def test_it_can_add_offset_and_rotation_to_get_total_shift_array</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
-          <code class="ruby">  #   enc = Encryptor.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="45">
-          
-          
-          <code class="ruby">  #   assert_equal [3,3,3,3], enc.total_shift_array</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="46">
-          
-          
-          <code class="ruby">  # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="47">
-          
-          
-          <code class="ruby">  #</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby">  # def test_it_can_calculate_how_much_to_lengthen_the_total_shift_array</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="49">
-          
-          
-          <code class="ruby">  #   enc = Encryptor.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
-          <code class="ruby">  #   assert_equal 2, enc.how_much_to_lengthen_the_total_shift_array</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="51">
-          
-          
-          <code class="ruby">  # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="52">
-          
-          
-          <code class="ruby">  #</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="53">
-          
-          
-          <code class="ruby">  # def test_it_can_lengthen_the_total_shift_array</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
-          
-          
-          <code class="ruby">  #   enc = Encryptor.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="55">
-          
-          
-          <code class="ruby">  #   assert_equal [3,3,3,3,3,3,3,3], enc.lengthen_the_total_shift_array</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="56">
-          
-          
-          <code class="ruby">  # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="57">
-          
-          
-          <code class="ruby">  #</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="58">
-          
-          
-          <code class="ruby">  # def test_it_can_make_the_shift_array_the_same_length_as_message</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="59">
-          
-          
-          <code class="ruby">  #</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="60">
-          
-          
-          <code class="ruby">  #   enc = Encryptor.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="61">
-          
-          
-          <code class="ruby">  #   assert_equal enc.find_letter_indices.length, enc.make_the_shift_array_the_same_length_as_message.length</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="62">
-          
-          
-          <code class="ruby">  # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="63">
-          
-          
-          <code class="ruby">  #</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="64">
-          
-          
-          <code class="ruby">  # def test_it_can_find_the_new_encrypted_index</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="65">
-          
-          
-          <code class="ruby">  #   enc = Encryptor.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="66">
-          
-          
-          <code class="ruby">  #   assert_equal [3,22,17,15,11,5], enc.find_encrypted_index</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="67">
-          
-          
-          <code class="ruby">  # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="68">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="69">
+        <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_it_can_find_the_new_encrypted_te_for_non_default_parameters</code>
+          <code class="ruby">  def test_it_can_find_the_new_encrypted_text_for_non_default_parameters</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="70">
+        <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
           <code class="ruby">    enc = Encryptor.new(&quot;ruby&quot;, [9,2,2,5], [41,15,52,21])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="71">
+        <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
           <code class="ruby">    assert_equal &quot;2.ql&quot;, enc.encrypt</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="72">
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    # assert enc.encrypt.length == enc.find_encrypted_index.length</code>
+          <code class="ruby">    enc = Encryptor.new(&quot;it is all sunshine and butterflies&quot;, [9,2,2,5], [13,34,44,44])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="73">
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal &quot;4qesb7hv77z49pos9bek9aeldq0oacss0p&quot;, enc.encrypt</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    enc = Encryptor.new(&quot;cat&quot;, )</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
           
           
           <code class="ruby">  end</code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">  # def test_it_can_find_letter_indices</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">  #   mc = MasterCipher.new(&quot;blondie&quot;, [1,1,1,1], [2,2,2,2])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">  #   assert_equal [0,19,14,12,8,2], mc.build_message_indices</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">  # def test_it_can_add_offset_and_rotation_to_get_total_shift_array</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">  #   enc = Encryptor.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby">  #   assert_equal [3,3,3,3], enc.total_shift_array</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">  # def test_it_can_calculate_how_much_to_lengthen_the_total_shift_array</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">  #   enc = Encryptor.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">  #   assert_equal 2, enc.how_much_to_lengthen_the_total_shift_array</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">  # def test_it_can_lengthen_the_total_shift_array</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby">  #   enc = Encryptor.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">  #   assert_equal [3,3,3,3,3,3,3,3], enc.lengthen_the_total_shift_array</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby">  # def test_it_can_make_the_shift_array_the_same_length_as_message</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby">  #   enc = Encryptor.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby">  #   assert_equal enc.find_letter_indices.length, enc.make_the_shift_array_the_same_length_as_message.length</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby">  # def test_it_can_find_the_new_encrypted_index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby">  #   enc = Encryptor.new</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">  #   assert_equal [3,22,17,15,11,5], enc.find_encrypted_index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
           
           
           <code class="ruby">end</code>
@@ -1946,502 +1778,52 @@
   <pre>
     <ol>
       
-        <li class="never" data-hits="" data-linenumber="1">
-          
-          
-          <code class="ruby"># require &#39;simplecov&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"># SimpleCov.start</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby"># require &#39;minitest/autorun&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby"># require &#39;minitest/pride&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
           <code class="ruby">require_relative &#39;test_helper&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
           <code class="ruby">require_relative &#39;../lib/offset&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
           <code class="ruby">require &quot;pry&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class TestOffset &lt; Minitest::Test</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def test_it_exists</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert Offset</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def test_it_has_a_date_method</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    offset_object = Offset.new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert offset_object.respond_to?(:date)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def test_it_can_create_an_integer_date_from_a_date_not_staring_with_zero</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    offset_object = Offset.new(&quot;120315&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    integer_date = offset_object.integer_date</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal 120315, integer_date</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal Fixnum, integer_date.class</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def test_it_can_create_an_integer_date_from_a_date_starting_with_zero</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="29">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    offset_object = Offset.new(&quot;030315&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="31">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    integer_date = offset_object.integer_date</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="32">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="33">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal 30315, integer_date</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal Fixnum, integer_date.class</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="37">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def test_it_can_create_an_offset_from_a_date_starting_with_zero</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="38">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    offset_object = Offset.new(&quot;022677&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="39">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="40">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    offset = offset_object.create_offset</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="41">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="42">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal [6, 3, 2, 9], offset</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="43">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal Array, offset.class</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="45">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="46">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def test_it_can_create_an_offset_from_a_date_ending_with_zero</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="47">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    offset_object = Offset.new(&quot;122600&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="49">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    offset = offset_object.create_offset</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="51">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal [0, 0, 0, 0], offset</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="52">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal Array, offset.class</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="53">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="55">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def test_it_can_create_an_offset_from_a_date_neither_starting_nor_ending_with_zero</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="56">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    offset_object = Offset.new(&quot;122601&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="57">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="58">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    offset = offset_object.create_offset</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="59">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="60">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal [5, 2, 0, 1], offset</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="61">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="62">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="63">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def test_it_can_create_an_offset_from_a_default_date</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="64">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    offset_object = Offset.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="65">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="66">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    offset_object.stub :date, &quot;030615&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="67">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      offset = offset_object.create_offset</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="68">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      assert_equal [8, 2, 2, 5], offset</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="69">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="70">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="71">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="72">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-      
-        <div class="source_table" id="391d8250d3bdb28d2c234b35b0396bdd01a19f79">
-  <div class="header">
-    <h3>test/rotation_test.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>39</b> relevant lines. 
-      <span class="green"><b>39</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="never" data-hits="" data-linenumber="1">
-          
-          
-          <code class="ruby"># require &#39;simplecov&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"># SimpleCov.start</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby"># require &#39;minitest&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
           
           
-          <code class="ruby"># require &#39;minitest/autorun&#39;</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"># require &#39;minitest/pride&#39;</code>
+          <code class="ruby">class TestOffset &lt; Minitest::Test</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative &#39;test_helper&#39;</code>
+          <code class="ruby">  def test_it_exists</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative &#39;../lib/rotation&#39;</code>
+          <code class="ruby">    assert Offset</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="8">
           
-          <code class="ruby">require &quot;pry&quot;</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
@@ -2453,97 +1835,97 @@
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">class TestRotation &lt; Minitest::Test</code>
+          <code class="ruby">  def test_it_has_a_date_method</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_accessor :rotation</code>
+          <code class="ruby">    offset_object = Offset.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">  def setup</code>
+          <code class="ruby">    assert offset_object.respond_to?(:date)</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="14">
-          <span class="hits">8</span>
-          
-          <code class="ruby">    @rotation = Rotation.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
+        <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_it_has_a_key_that_is_five_elements_long</code>
+          <code class="ruby">  def test_it_can_create_an_integer_date_from_a_date_not_staring_with_zero</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    offset_object = Offset.new(&quot;120315&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal 5, rotation.key.length</code>
+          <code class="ruby">    integer_date = offset_object.integer_date</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    assert_equal 120315, integer_date</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_it_has_a_key_whose_elements_are_included_in_the_range_zero_through_nine</code>
+          <code class="ruby">    assert_equal Fixnum, integer_date.class</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="22">
           
-          <code class="ruby">    numbers = %w(0 1 2 3 4 5 6 7 8 9)</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="23">
-          <span class="hits">6</span>
+        <li class="never" data-hits="" data-linenumber="23">
           
-          <code class="ruby">    only_1_through_9 = rotation.key.all?{|k| numbers.include?(k)}</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert only_1_through_9</code>
+          <code class="ruby">  def test_it_can_create_an_integer_date_from_a_date_starting_with_zero</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    offset_object = Offset.new(&quot;030315&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
@@ -2555,61 +1937,61 @@
         <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_it_can_generate_an_array_of_four_rotations</code>
+          <code class="ruby">    integer_date = offset_object.integer_date</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal 4, rotation.rotation_array.length</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="31">
+        <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_it_can_generate_the_first_rotation_from_the_key</code>
+          <code class="ruby">    assert_equal 30315, integer_date</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="32">
+        <li class="covered" data-hits="1" data-linenumber="30">
           <span class="hits">1</span>
           
-          <code class="ruby">    rotation.stub :key, [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;] do</code>
+          <code class="ruby">    assert_equal Fixnum, integer_date.class</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="33">
           <span class="hits">1</span>
           
-          <code class="ruby">      rotation.create_rotation_array</code>
+          <code class="ruby">  def test_it_can_create_an_offset_from_a_date_starting_with_zero</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
-          <code class="ruby">      assert_equal 12, rotation.rotation_array[0]</code>
+          <code class="ruby">    offset_object = Offset.new(&quot;022677&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    offset = offset_object.create_offset</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
@@ -2621,37 +2003,37 @@
         <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_it_can_generate_the_second_rotation_from_the_key</code>
+          <code class="ruby">    assert_equal [6, 3, 2, 9], offset</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
-          <code class="ruby">    rotation.stub :key, [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;] do</code>
+          <code class="ruby">    assert_equal Array, offset.class</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      rotation.create_rotation_array</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="41">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      assert_equal 23, rotation.rotation_array[1]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="42">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="never" data-hits="" data-linenumber="40">
           
           
           <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_can_create_an_offset_from_a_date_ending_with_zero</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    offset_object = Offset.new(&quot;122600&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
@@ -2663,73 +2045,73 @@
         <li class="covered" data-hits="1" data-linenumber="45">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_it_can_generate_the_third_rotation_from_the_key</code>
+          <code class="ruby">    offset = offset_object.create_offset</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    rotation.stub :key, [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;] do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="47">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      rotation.create_rotation_array</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="48">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      assert_equal 34, rotation.rotation_array[2]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="49">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="51">
+        <li class="never" data-hits="" data-linenumber="46">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal [0, 0, 0, 0], offset</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal Array, offset.class</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_can_create_an_offset_from_a_date_neither_starting_nor_ending_with_zero</code>
+        </li>
+      
         <li class="covered" data-hits="1" data-linenumber="52">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_it_can_generate_the_fourth_rotation_from_the_key</code>
+          <code class="ruby">    offset_object = Offset.new(&quot;122601&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="53">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="53">
           
-          <code class="ruby">    rotation.stub :key, [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;] do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
-          <code class="ruby">      rotation.create_rotation_array</code>
+          <code class="ruby">    offset = offset_object.create_offset</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="55">
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
           <span class="hits">1</span>
           
-          <code class="ruby">      assert_equal 45, rotation.rotation_array[3]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="56">
-          
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">    assert_equal [5, 2, 0, 1], offset</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
@@ -2747,58 +2129,640 @@
         <li class="covered" data-hits="1" data-linenumber="59">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_it_creates_rotations</code>
+          <code class="ruby">  def test_it_can_create_an_offset_from_a_default_date</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="60">
           <span class="hits">1</span>
           
-          <code class="ruby">    rotation = Rotation.new(&quot;41521&quot;)</code>
+          <code class="ruby">    offset_object = Offset.new</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="61">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="61">
           
-          <code class="ruby">    rotation_array = rotation.create_rotation_array</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="62">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal 4, rotation_array.size</code>
+          <code class="ruby">    offset_object.stub :date, &quot;030615&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="63">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal 41, rotation_array[0]</code>
+          <code class="ruby">      offset = offset_object.create_offset</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="64">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal 15, rotation_array[1]</code>
+          <code class="ruby">      assert_equal [8, 2, 2, 5], offset</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="65">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="65">
           
-          <code class="ruby">    assert_equal 52, rotation_array[2]</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="66">
-          <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal 21, rotation_array[3]</code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="67">
+        <li class="never" data-hits="" data-linenumber="66">
           
           
           <code class="ruby">  end</code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="391d8250d3bdb28d2c234b35b0396bdd01a19f79">
+  <div class="header">
+    <h3>test/rotation_test.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>63</b> relevant lines. 
+      <span class="green"><b>63</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require_relative &#39;test_helper&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require_relative &#39;../lib/rotation&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;pry&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class TestRotation &lt; Minitest::Test</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_accessor :rotation</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def setup</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="9">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @rotation = Rotation.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_has_a_key_that_is_five_elements_long</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 5, rotation.key.length</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_has_a_key_whose_elements_are_included_in_the_range_zero_through_nine</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    numbers = %w(0 1 2 3 4 5 6 7 8 9)</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="18">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    only_1_through_9 = rotation.key.all?{|k| numbers.include?(k)}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert only_1_through_9</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_can_generate_an_array_of_four_rotations</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 4, rotation.rotation_array.length</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_can_generate_the_first_rotation_from_the_key</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rotation.stub :key, [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;] do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      rotation.create_rotation_array</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      assert_equal 12, rotation.rotation_array[0]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_can_generate_the_second_rotation_from_the_key</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rotation.stub :key, [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;] do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      rotation.create_rotation_array</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      assert_equal 23, rotation.rotation_array[1]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_can_generate_the_third_rotation_from_the_key</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rotation.stub :key, [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;] do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      rotation.create_rotation_array</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      assert_equal 34, rotation.rotation_array[2]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_can_generate_the_fourth_rotation_from_the_key</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rotation.stub :key, [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;] do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      rotation.create_rotation_array</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      assert_equal 45, rotation.rotation_array[3]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_creates_rotations</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rotation = Rotation.new(&quot;41521&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rotation_array = rotation.create_rotation_array</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 4, rotation_array.length</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 41, rotation_array[0]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 15, rotation_array[1]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 52, rotation_array[2]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 21, rotation_array[3]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_creates_rotations_with_zeros</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rotation = Rotation.new(&quot;04810&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rotation_array = rotation.create_rotation_array</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 4, rotation_array.length</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="68">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 4, rotation_array[0]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="69">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 48, rotation_array[1]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 81, rotation_array[2]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 10, rotation_array[3]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_creates_rotations_with_all_zeros</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rotation = Rotation.new(&quot;00000&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rotation_array = rotation.create_rotation_array</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 4, rotation_array.length</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 0, rotation_array[0]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 0, rotation_array[1]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="80">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 0, rotation_array[2]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 0, rotation_array[3]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="84">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_creates_rotations_with_all_nines</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="85">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rotation = Rotation.new(&quot;99999&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="86">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rotation_array = rotation.create_rotation_array</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="87">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 4, rotation_array.length</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="88">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 99, rotation_array[0]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="89">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 99, rotation_array[1]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="90">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 99, rotation_array[2]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="91">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 99, rotation_array[3]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="92">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
           
           
           <code class="ruby">end</code>

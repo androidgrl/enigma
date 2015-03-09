@@ -13,6 +13,6 @@ class Encryptor
   end
 
   def encrypt
-    Thingy.new(string.join, offset, rotation).encrypt
+    MasterCipher.new(string.join, offset, rotation).encrypt
   end
 end

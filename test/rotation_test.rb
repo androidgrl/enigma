@@ -1,8 +1,3 @@
-# require 'simplecov'
-# SimpleCov.start
-# require 'minitest'
-# require 'minitest/autorun'
-# require 'minitest/pride'
 require_relative 'test_helper'
 require_relative '../lib/rotation'
 require "pry"
@@ -59,10 +54,41 @@ class TestRotation < Minitest::Test
   def test_it_creates_rotations
     rotation = Rotation.new("41521")
     rotation_array = rotation.create_rotation_array
-    assert_equal 4, rotation_array.size
+    assert_equal 4, rotation_array.length
     assert_equal 41, rotation_array[0]
     assert_equal 15, rotation_array[1]
     assert_equal 52, rotation_array[2]
     assert_equal 21, rotation_array[3]
   end
+
+  def test_it_creates_rotations_with_zeros
+    rotation = Rotation.new("04810")
+    rotation_array = rotation.create_rotation_array
+    assert_equal 4, rotation_array.length
+    assert_equal 4, rotation_array[0]
+    assert_equal 48, rotation_array[1]
+    assert_equal 81, rotation_array[2]
+    assert_equal 10, rotation_array[3]
+  end
+
+  def test_it_creates_rotations_with_all_zeros
+    rotation = Rotation.new("00000")
+    rotation_array = rotation.create_rotation_array
+    assert_equal 4, rotation_array.length
+    assert_equal 0, rotation_array[0]
+    assert_equal 0, rotation_array[1]
+    assert_equal 0, rotation_array[2]
+    assert_equal 0, rotation_array[3]
+  end
+
+  def test_it_creates_rotations_with_all_nines
+    rotation = Rotation.new("99999")
+    rotation_array = rotation.create_rotation_array
+    assert_equal 4, rotation_array.length
+    assert_equal 99, rotation_array[0]
+    assert_equal 99, rotation_array[1]
+    assert_equal 99, rotation_array[2]
+    assert_equal 99, rotation_array[3]
+  end
+
 end

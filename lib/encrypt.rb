@@ -1,7 +1,7 @@
 require_relative 'encryptor'
 require_relative 'rotation'
 require_relative 'offset'
-require_relative 'thingy'
+require_relative 'master_cipher'
 require 'pry'
 
 class FileParser
@@ -14,14 +14,14 @@ class FileParser
   end
 end
 
-fp = FileParser.new
+file_parser = FileParser.new
 path = File.join(__dir__, ARGV[0])
-fp.load(path)
+file_parser.load(path)
 
 
 rotation = Rotation.new
 offset = Offset.new
-encryptor = Encryptor.new(fp.message, offset.create_offset, rotation.rotation_array)
+encryptor = Encryptor.new(file_parser.message, offset.create_offset, rotation.rotation_array)
 encrypted_message = encryptor.encrypt
 puts encrypted_message
 
