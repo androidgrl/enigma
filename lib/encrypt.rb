@@ -38,3 +38,6 @@ fw = FileWriter.new
 saved_file = File.join(__dir__, ARGV[1])
 fw.save(saved_file, encrypted_message)
 puts "Created #{ARGV[1]} with key #{rotation.key.join} and date #{offset.date}"
+
+# ruby ./lib/encrypt.rb message.txt encrypted.txt
+# Created 'encrypted.txt' with the key 82648 and date 030815
