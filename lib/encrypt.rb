@@ -1,6 +1,7 @@
 require_relative 'encryptor'
 require_relative 'rotation'
 require_relative 'offset'
+require_relative 'thingy'
 require 'pry'
 
 class FileParser
