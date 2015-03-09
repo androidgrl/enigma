@@ -1,8 +1,9 @@
 # ruby ./lib/encrypt.rb message.txt encrypted.txt
-# Created 'encrypted.txt' with the key 82648 and date 030415
-#ruby ./lib/encrypt.rb message.txt encrypted.txt
+# Created 'encrypted.txt' with the key 82648 and date 030815
 
-#refactor rotator, rename it to encryptor
+# ruby ./lib/decrypt.rb encrypted.txt decrypted.txt 82648 030415
+# Created 'decrypted.txt' with the key 82648 and date 030415
+
 #add decryptor
 #private methods
 

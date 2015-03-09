@@ -14,10 +14,6 @@ class TestRotation < Minitest::Test
     @rotation = Rotation.new
   end
 
-  def test_it_exists
-    assert Rotation
-  end
-
   def test_it_has_a_key_that_is_five_elements_long
     assert_equal 5, rotation.key.length
   end
@@ -59,41 +55,14 @@ class TestRotation < Minitest::Test
       assert_equal 45, rotation.rotation_array[3]
     end
   end
-end
 
-class TestFakeRotation < Minitest::Test
-
-  def test_it_exists
-    assert FakeRotation
-  end
-
-  def test_it_has_a_key_that_is_five_elements_long
-    fr = FakeRotation.new
-    assert 5, fr.key.length
-  end
-
-  def test_it_can_generate_an_array_of_four_rotations
-    fr = FakeRotation.new
-    assert_equal 4, fr.rotation_array.length
-  end
-
-  def test_it_can_generate_the_first_rotation_from_the_key
-    fr = FakeRotation.new
-    assert_equal 12, fr.rotation_array[0]
-  end
-
-  def test_it_can_generate_the_second_rotation_from_the_key
-    fr = FakeRotation.new
-    assert_equal 23, fr.rotation_array[1]
-  end
-
-  def test_it_can_generate_the_third_rotation_from_the_key
-    fr = FakeRotation.new
-    assert_equal 34, fr.rotation_array[2]
-  end
-
-  def test_it_can_generate_the_fourth_rotation_from_the_key
-    fr = FakeRotation.new
-    assert_equal 45, fr.rotation_array[3]
+  def test_it_creates_rotations
+    rotation = Rotation.new("41521")
+    rotation_array = rotation.create_rotation_array
+    assert_equal 4, rotation_array.size
+    assert_equal 41, rotation_array[0]
+    assert_equal 15, rotation_array[1]
+    assert_equal 52, rotation_array[2]
+    assert_equal 21, rotation_array[3]
   end
 end
