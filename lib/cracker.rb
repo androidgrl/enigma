@@ -23,16 +23,14 @@ class Crack
       end
       @attempted_key += 1
     end
-    puts @attempted_key - 1
+    @attempted_key - 1
   end
 
   def cracked?
     @cracked
   end
+
 end
 
-crack = Crack.new("holymof", "030915")
+crack = Crack.new("47o4.0z7bbgrv7qwv1", "031015")
 crack.crack
- 
-# ruby ./lib/crack.rb encrypted.txt cracked.txt 030415
-# Created 'cracked.txt' with the cracked key 82648 and date 030415

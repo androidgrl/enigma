@@ -1,3 +1,5 @@
+require "pry"
+
 class MasterCipher
   attr_accessor :offset, :rotation, :message, :char_map
 
@@ -9,7 +11,7 @@ class MasterCipher
   end
 
   def decrypt
-    
+
     decrypted_indices = message_indices.zip(total_shift).map do |index, shift|
       (index - shift) % 39
     end
