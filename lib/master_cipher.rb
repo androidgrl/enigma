@@ -9,9 +9,7 @@ class MasterCipher
   end
 
   def decrypt
-    # total_shift = build_shift
-    # message_indices = build_message_indices
-
+        
     decrypted_indices = message_indices.zip(total_shift).map do |index, shift|
       (index - shift) % 39
     end
@@ -20,8 +18,6 @@ class MasterCipher
   end
 
   def encrypt
-    # total_shift = build_shift
-    # message_indices = build_message_indices
 
     encrypted_indices = message_indices.zip(total_shift).map do |index, shift|
       (index + shift) % 39
@@ -54,6 +50,3 @@ class MasterCipher
   end
 
 end
-
-# mc = MasterCipher.new("a", "2", "3")  # => #<MasterCipher:0x007fe17907c300 @message="a", @offset="2", @rotation="3", @char_map=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", " ", ".", ","]>
-# puts mc.char_map                      # => nil
