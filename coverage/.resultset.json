@@ -21,17 +21,6 @@
         23,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null
       ],
       "/Users/jamie/turing/module1/weekthree/enigma2/lib/master_cipher.rb": [
@@ -253,29 +242,6 @@
         null,
         null
       ],
-      "/Users/jamie/turing/module1/weekthree/enigma2/test/file_parser_test.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
       "/Users/jamie/turing/module1/weekthree/enigma2/test/offset_test.rb": [
         1,
         1,
@@ -443,6 +409,6 @@
         null
       ]
     },
-    "timestamp": 1425962902
+    "timestamp": 1425963527
   }
 }

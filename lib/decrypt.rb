@@ -35,6 +35,3 @@ file_writer = FileWriter.new
 saved_file = File.join(__dir__, ARGV[1])
 file_writer.save(saved_file, decrypted_message)
 puts "Created #{ARGV[1]} with key #{key} and date #{date}"
-
-# ruby ./lib/decrypt.rb encrypted.txt decrypted.txt 82648 030415
-# Created 'decrypted.txt' with the key 82648 and date 030415

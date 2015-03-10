@@ -14,7 +14,7 @@
       <img src="./assets/0.9.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-03-09T22:48:22-06:00">2015-03-09T22:48:22-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-03-09T22:58:47-06:00">2015-03-09T22:58:47-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -31,7 +31,7 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>9</b> files in total.
+    <b>8</b> files in total.
     <b>230</b> relevant lines. 
     <span class="green"><b>230</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
@@ -53,7 +53,7 @@
       <tr>
         <td class="strong"><a href="#b710b36e045100b14bf911af29c413b4a64783a9" class="src_link" title="lib/decryptor.rb">lib/decryptor.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>31</td>
+        <td>20</td>
         <td>13</td>
         <td>13</td>
         <td>0</td>
@@ -111,16 +111,6 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#38d6e083bbb2efc719b3b0e7868aa89bf70c3032" class="src_link" title="test/file_parser_test.rb">test/file_parser_test.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>21</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
         <td class="strong"><a href="#e62ff700866e96b09dff269c88bfc2481436f9c4" class="src_link" title="test/offset_test.rb">test/offset_test.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>68</td>
@@ -173,19 +163,19 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative &#39;master_cipher&#39;  # =&gt; true</code>
+          <code class="ruby">require_relative &#39;master_cipher&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative &#39;offset&#39;         # =&gt; true</code>
+          <code class="ruby">require_relative &#39;offset&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative &#39;rotation&#39;       # =&gt; true</code>
+          <code class="ruby">require_relative &#39;rotation&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
@@ -215,31 +205,31 @@
         <li class="covered" data-hits="23" data-linenumber="8">
           <span class="hits">23</span>
           
-          <code class="ruby">    @encrypted_message = encrypted_message                   # =&gt; &quot;qw267x,l m,s,6y771y6pp0s9mx2728778yzimu1v37s7pv2r8rwqnrwcmf2rmx27a887.2zimzo,tr6b622r7rql2,sn9y1,t,m7a887.2zim1ostr7lmu7qt7r78b5f20lc3.l4m62k8168&quot;</code>
+          <code class="ruby">    @encrypted_message = encrypted_message</code>
         </li>
       
         <li class="covered" data-hits="23" data-linenumber="9">
           <span class="hits">23</span>
           
-          <code class="ruby">    @date = date                                             # =&gt; &quot;030915&quot;</code>
+          <code class="ruby">    @date = date</code>
         </li>
       
         <li class="covered" data-hits="23" data-linenumber="10">
           <span class="hits">23</span>
           
-          <code class="ruby">    @key = key                                               # =&gt; &quot;29187&quot;</code>
+          <code class="ruby">    @key = key</code>
         </li>
       
         <li class="covered" data-hits="23" data-linenumber="11">
           <span class="hits">23</span>
           
-          <code class="ruby">    @char_map = [*&quot;a&quot;..&quot;z&quot;] + [*&quot;0&quot;..&quot;9&quot;] + [&quot; &quot;, &quot;.&quot;, &quot;,&quot;]  # =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;, &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot; &quot;, &quot;.&quot;, &quot;,&quot;]</code>
+          <code class="ruby">    @char_map = [*&quot;a&quot;..&quot;z&quot;] + [*&quot;0&quot;..&quot;9&quot;] + [&quot; &quot;, &quot;.&quot;, &quot;,&quot;]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">  end                                                        # =&gt; nil</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
@@ -257,25 +247,25 @@
         <li class="covered" data-hits="23" data-linenumber="15">
           <span class="hits">23</span>
           
-          <code class="ruby">    offset = Offset.new(@date).create_offset                        # =&gt; [7, 2, 2, 5]</code>
+          <code class="ruby">    offset = Offset.new(@date).create_offset</code>
         </li>
       
         <li class="covered" data-hits="23" data-linenumber="16">
           <span class="hits">23</span>
           
-          <code class="ruby">    rotation = Rotation.new(@key).create_rotation_array             # =&gt; [29, 91, 18, 87]</code>
+          <code class="ruby">    rotation = Rotation.new(@key).create_rotation_array</code>
         </li>
       
         <li class="covered" data-hits="23" data-linenumber="17">
           <span class="hits">23</span>
           
-          <code class="ruby">    MasterCipher.new(@encrypted_message, offset, rotation).decrypt  # =&gt; &quot;this is a secret message, do not tell anyone about it. if you do you will face serious consequences. you will have to attend turing for 7 months.&quot;</code>
+          <code class="ruby">    MasterCipher.new(@encrypted_message, offset, rotation).decrypt</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">  end                                                               # =&gt; nil</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
@@ -287,73 +277,7 @@
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby">end  # =&gt; nil</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby"># dec = Decryptor.new(&quot;199be66rd89oezakwe5oz5ap3&quot;, &quot;090315&quot;, &quot;66265&quot;)  # =&gt; #&lt;Decryptor:0x007ff5d2885e08 @encrypted_message=&quot;199be66rd89oezakwe5oz5ap3&quot;, @date=&quot;090315&quot;, @key=&quot;66265&quot;, @char_map=[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;, &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot; &quot;, &quot;.&quot;, &quot;,&quot;]&gt;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby"># dec.decrypt                                                          # =&gt; &quot;4khjhhezgjhwhalszsdw2glx6&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
-          <code class="ruby"># #dec = Decryptor.new(&quot;wm7uane,dcegfw3var3uvf5gcc2qqywvhq ,dskqqjwcetgvanf,rww0rzwylq ,if1gax3tltguahapvjcwhs1gvdw0rzwylq ,kfhgaya,dyfgqiwvxw7pjc4quct,pt,vkx&quot;, )</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby"># dec = Decryptor.new(&quot;fevh4peoebuhabtycbs8t,sybbe3 7ms2rys9deydqer te3 7zoc71ztqoot,ykyhep0 04ab&quot;, &quot;020315&quot;, &quot;13444&quot;)  # =&gt; #&lt;Decryptor:0x007ff5d288c6e0 @encrypted_message=&quot;fevh4peoebuhabtycbs8t,sybbe3 7ms2rys9deydqer te3 7zoc71ztqoot,ykyhep0 04ab&quot;, @date=&quot;020315&quot;, @key=&quot;13444&quot;, @char_map=[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;, &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot; &quot;, &quot;.&quot;, &quot;,&quot;]&gt;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby"># dec.decrypt</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
-          
-          
-          <code class="ruby"># dec = Decryptor.new(&quot;qw267x,l m,s,6y771y6pp0s9mx2728778yzimu1v37s7pv2r8rwqnrwcmf2rmx27a887.2zimzo,tr6b622r7rql2,sn9y1,t,m7a887.2zim1ostr7lmu7qt7r78b5f20lc3.l4m62k8168&quot;, &quot;030915&quot;, &quot;29187&quot;)  # =&gt; #&lt;Decryptor:0x007fe1b584aed8 @encrypted_message=&quot;qw267x,l m,s,6y771y6pp0s9mx2728778yzimu1v37s7pv2r8rwqnrwcmf2rmx27a887.2zimzo,tr6b622r7rql2,sn9y1,t,m7a887.2zim1ostr7lmu7qt7r78b5f20lc3.l4m62k8168&quot;, @date=&quot;030915&quot;, @key=&quot;29187&quot;, @char_map=[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;, &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot; &quot;, &quot;.&quot;, &quot;,&quot;]&gt;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
-          <code class="ruby"># dec.decrypt                                                                                                                                                                                  # =&gt; &quot;this is a secret message, do not tell anyone about it. if you do you will face serious consequences. you will have to attend turing for 7 months.&quot;</code>
+          <code class="ruby">end</code>
         </li>
       
     </ol>
@@ -1698,150 +1622,6 @@
           
           
           <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-      
-        <div class="source_table" id="38d6e083bbb2efc719b3b0e7868aa89bf70c3032">
-  <div class="header">
-    <h3>test/file_parser_test.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>0</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="never" data-hits="" data-linenumber="1">
-          
-          
-          <code class="ruby"># require_relative &#39;test_helper&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"># require_relative &#39;example&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby"># class TestFileParser &lt; Minitest::Test</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby">#   attr_accessor :file_path</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">#   def setup</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">#     self.file_path = File.expand_path&#39;../fixtures/example.txt&#39;,__FILE__</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">#     @parse = FileParser.new(file_path)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">#   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">#   def test_it_can_read_a_file</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby">#     assert_equal &quot;this is only a test.&quot;, @parse.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby">#   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby"># end</code>
         </li>
       
     </ol>
