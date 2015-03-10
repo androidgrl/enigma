@@ -36,6 +36,3 @@ file_writer = FileWriter.new
 saved_file = File.join(__dir__, ARGV[1])
 file_writer.save(saved_file, decrypted_message)
 puts "Created #{ARGV[1]} with the cracked key #{key} and date #{date}"
-
-# ruby ./lib/crack.rb encrypted.txt cracked.txt 030415
-# Created 'cracked.txt' with the cracked key 82648 and date 030415

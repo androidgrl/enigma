@@ -57,6 +57,8 @@ class TestDecryptor < Minitest::Test
     assert_it_decrypts("qw267x,l m,s,6y771y6pp0s9mx2728778yzimu1v37s7pv2r8rwqnrwcmf2rmx27a887.2zimzo,tr6b622r7rql2,sn9y1,t,m7a887.2zim1ostr7lmu7qt7r78b5f20lc3.l4m62k8168", "030915", "29187", "this is a secret message, do not tell anyone about it. if you do you will face serious consequences. you will have to attend turing for 7 months.")
 
     assert_it_decrypts("holymof", "030915", "41445", "..end..")
+
+    assert_it_decrypts("nhqouafjglsbehsgeb", "031015", "84037", "hello again..end..")
   end
 
 end

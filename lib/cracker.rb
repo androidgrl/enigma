@@ -31,6 +31,3 @@ class Crack
   end
 
 end
-
-crack = Crack.new("47o4.0z7bbgrv7qwv1", "031015")
-crack.crack

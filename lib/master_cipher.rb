@@ -11,20 +11,10 @@ class MasterCipher
   end
 
   def decrypt
-
-    decrypted_indices = message_indices.zip(total_shift).map do |index, shift|
-      (index - shift) % 39
-    end
-
     build_string(decrypted_indices)
   end
 
   def encrypt
-
-    encrypted_indices = message_indices.zip(total_shift).map do |index, shift|
-      (index + shift) % 39
-    end
-
     build_string(encrypted_indices)
   end
 
@@ -43,12 +33,27 @@ class MasterCipher
   end
 
   def total_shift
-    short_array = offset.zip(rotation).map do |offset,rotation|
-      offset + rotation
-    end
-
     long_array = short_array * (@message.length/short_array.length + 1)
     long_array.take(@message.length)
+  end
+
+  def short_array
+    #memoization
+    @short_array ||= offset.zip(rotation).map do |offset,rotation|
+      offset + rotation
+    end
+  end
+
+  def decrypted_indices
+    message_indices.zip(total_shift).map do |index, shift|
+      (index - shift) % 39
+    end
+  end
+
+  def encrypted_indices
+    message_indices.zip(total_shift).map do |index, shift|
+      (index + shift) % 39
+    end
   end
 
 end
