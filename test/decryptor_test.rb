@@ -28,8 +28,6 @@ class TestDecryptor < Minitest::Test
 
     assert_it_decrypts(",ids5rz9 o.,2l.h4 24e2. peocp.", "030815", "13772","victory to all in 1502 ..end..")
 
-    assert_it_decrypts("4w0 .pxw86 3ud3gub3,dpaaep8383m.1paae9m,x4t", "030915", "55520", "hello i love you wont you tell me your name")
-
     assert_it_decrypts("d", "030915", "77509", " ")
 
     assert_it_decrypts("8", "030915", "28823", ",")
